@@ -3,7 +3,11 @@
 
 Usage:
 
-> (python) sha256_chksum file
+> (python) sha256_chksum.py file
+
+Or with the *pyinstaller* executable on Windows:
+
+> sha256_cksum file
 
 This is roughly equivalent running the Linux utility `sha256sum` with the -c switch:
 > sha256sum -c file
