@@ -26,7 +26,6 @@ function SHA256-Cksum {
     )
     $cksum_file = $file.Split(".")[0] + "_sha256.txt";
     $cksum_url = "${global:server}/${cksum_file}"
-    echo $cksum_url
     Invoke-WebRequest $cksum_url -OutFile $cksum_file
     $actual_cksum_file = (Get-Item $cksum_file)
     $expected = (Get-Content -Path $actual_cksum_file).SubString(0, 64)
