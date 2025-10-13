@@ -1,11 +1,11 @@
-# sha256_cksum-setup.ps1
-# Install sha256_cksum on a Windows system
+# sha256_chksum-setup.ps1
+# Install sha256_chksum on a Windows system
 #
 # Author: Sam Saint-Pettersen, October 2025.
 # https://stpettersen.xyz
 #
 # Usage in PowerShell:
-# iex (iwr 'https://sh.homelab.stpettersen.xyz/sha256/sha256_cksum-setup.ps1' -UseBasicParsing)
+# iex (iwr 'https://sh.homelab.stpettersen.xyz/sha256/sha256_chksum-setup.ps1' -UseBasicParsing)
 #
 
 # Define the server root for assets served by this script.
