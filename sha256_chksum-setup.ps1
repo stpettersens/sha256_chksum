@@ -40,7 +40,7 @@ function SHA256-Cksum {
 }
 
 function Script-Cksum {
-    $script ="partycopy-setup.ps1"
+    $script ="sha256_cksum-setup.ps1"
     if (!(Test-Path -Path $script)) {
         Invoke-WebRequest "${global:server}/${script}" -OutFile $script
     }

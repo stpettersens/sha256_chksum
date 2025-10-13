@@ -1,10 +1,12 @@
 uname := $(shell uname)
 sha256sumA=sha256sum sha256_chksum.py > sha256_cksum_sha256.txt
 sha256sumB=sha256sum sha256_chksum_win64.zip > sha256_chksum_win64_sha256.txt
+sha256sumC=sha256sum sha256_chksum-setup.ps1 > sha256_chksum-setup_sha256.txt
 
 ifeq ($(uname),Windows)
 	sha256sumA=uv run python sha256_chksum.py sha256_chksum.py
 	sha256sumB=uv run python sha256_chksum.py sha256_chksum_win64.zip
+	sha256sumC=uv run python sha256_chksum.py sha256_chksum-setup.ps1
 endif
 
 check:
@@ -19,5 +21,6 @@ executable:
 	$(sha256sumB)
 
 upload:
+	$(sha256sumC)
 	@echo
 	@copyparty_sync
