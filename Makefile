@@ -17,7 +17,7 @@ check:
 executable:
 	uv pip install pyinstaller
 	uv run pyinstaller -F sha256_chksum.py
-	7z u -tzip sha256_chksum_win64.zip .\dist\sha256_chksum.exe LICENSE uninstall.ps1
+	7z u -tzip sha256_chksum_win64.zip .\dist\sha256_chksum.exe LICENSE
 	$(sha256sumB)
 
 upload:
