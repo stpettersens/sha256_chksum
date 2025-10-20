@@ -1,5 +1,5 @@
 ### sha256_chksum
-> Simple utility to create sha256 a checksum text file for a file.
+> Simple utility to create a SHA256 checksum text file for a file.
 
 Usage:
 
@@ -11,3 +11,4 @@ Or with the *pyinstaller* executable on Windows:
 
 This is roughly equivalent running the Linux utility `sha256sum` with the -c switch:
 > sha256sum -c file
+
