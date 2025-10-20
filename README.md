@@ -9,6 +9,5 @@ Or with the *pyinstaller* executable on Windows:
 
 > sha256_cksum file
 
-This is roughly equivalent running the Linux utility `sha256sum` with the -c switch:
-> sha256sum -c file
-
+This is roughly equivalent running the Linux utility `sha256sum`:
+> sha256sum file > file_sha256.txt
